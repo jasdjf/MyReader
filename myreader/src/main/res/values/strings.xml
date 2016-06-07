@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyNewReader</string>
+    <string name="action_settings">Settings</string>
+    <string name="bookshelf_null">书架空空如也\r\n赶紧去添加吧!</string>
+    <string name="search">搜索</string>
+    <string name="cancel">取消</string>
+    <string name="auto_scan">智能扫描</string>
+    <string name="choose">手动选择</string>
+    <string name="add_book">加入书架</string>
+    <string name="download_book">下载书籍</string>
+    <string name="loading">正在加载...</string>
+    <string name="time_out">连接网络超时,请检查网络连接是否通畅!</string>
+</resources>

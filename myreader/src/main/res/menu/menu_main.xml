@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MainActivity">
+
+    <item
+        android:id="@+id/action_import"
+        android:orderInCategory="100"
+        android:title="导入书籍"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_manage"
+        android:orderInCategory="100"
+        android:title="书籍管理"
+        app:showAsAction="never" />
+</menu>

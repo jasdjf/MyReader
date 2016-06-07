@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:minHeight="40dp"
+            android:minWidth="50dp"
+            android:background="@drawable/btn_bg"
+            android:text="管理"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/list_or_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/management"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:minWidth="50dp"
+            android:layout_alignTop="@id/management"
+            android:layout_alignBottom="@id/management"
+            android:background="@drawable/btn_bg"
+            android:text="列表"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/management"
+            android:layout_alignBottom="@id/management"
+            android:background="@drawable/search_text_bg"
+            android:layout_toLeftOf="@id/list_or_grid"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="搜小说"
+                android:textColor="#989898"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/novel_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:columnWidth="100dp"
+        android:scrollbars="none"
+        android:stretchMode="spacingWidth"
+        android:verticalSpacing="20dp">
+
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/add_book_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/add_book"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:background="@drawable/plus_bg_seletor"
+            android:src="@drawable/plus"
+            android:scaleType="center"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_book"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="@string/bookshelf_null"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
